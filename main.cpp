@@ -7,15 +7,13 @@
 
 using namespace std;
 
-
-
 int main()
 {
-    cout << "Hello world!" << endl;
     Bank bank;
     bank.insert_account(234.0, "Ana");
+    bank.insert_account(9987.42, "Beatriz");
+    bank.insert_account(2313.7, "Carla");
     bank.print_accounts();
-
 
     return 0;
 }
