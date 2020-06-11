@@ -7,11 +7,8 @@
 
 using namespace std;
 
-
-
 int main()
 {
-    cout << "Hello world!\n\n" << endl;
     Bank bank;
     bank.insert_account(200.0, "Ana");
     bank.insert_account(43345.34, "B");
@@ -25,7 +22,6 @@ int main()
     bank.account_updater(0.12);
     
     bank.print_accounts();
-    
     
     return 0;
 }
