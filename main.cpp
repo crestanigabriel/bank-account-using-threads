@@ -4,7 +4,6 @@
 
 #include <Bank.h>
 #include <Account.h>
-#include <Semaphore.h>
 
 #define NUMBER_OF_ACCOUNTS 10
 #define NUMBER_OF_OPERATIONS 100
