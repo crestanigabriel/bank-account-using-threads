@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1591663815 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/main.cpp
+1591893610 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/main.cpp
 	<iostream>
+	<cstdlib>
 	<list>
 	<Bank.h>
 	<Account.h>
