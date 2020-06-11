@@ -10,10 +10,18 @@ using namespace std;
 int main()
 {
     Bank bank;
-    bank.insert_account(234.0, "Ana");
-    bank.insert_account(9987.42, "Beatriz");
-    bank.insert_account(2313.7, "Carla");
+    bank.insert_account(200.0, "Ana");
+    bank.insert_account(43345.34, "B");
+    bank.insert_account(5465.3, "C");
     bank.print_accounts();
-
+    
+    bank.deposit(10, "Ana");
+    bank.drawOut(250, "Ana");
+    bank.drawOut(205, "Ana");
+    
+    bank.account_updater(0.12);
+    
+    bank.print_accounts();
+    
     return 0;
 }
