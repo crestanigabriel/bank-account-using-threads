@@ -45,12 +45,15 @@ int main()
 {
     Bank bank;
     create_accounts(bank);
-
     bank.print_accounts();
-
+    auto startTime = std::chrono::high_resolution_clock::now();
     multiple_operations(bank);
-
+    auto stopTime = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stopTime - startTime);
     bank.print_accounts();
-
+    
+//    cout << "\nDuration: " << duration.count()/1000000 << "s" << endl;
+    cout << "\nDuration: " << duration.count() << "microseconds" << endl;
+    
     return 0;
 }
