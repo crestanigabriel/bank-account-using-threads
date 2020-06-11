@@ -48,6 +48,7 @@ void Bank::account_updater(double tax) {
     
     for (it = accounts.begin(); it != accounts.end(); it++) {
         updatedAccountsThreads[counter] = thread(&Account::update, &(*it), tax);
+        updatedAccountsThreads[counter].join();
         counter++;
     }
 }
