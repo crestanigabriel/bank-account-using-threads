@@ -42,7 +42,6 @@ void Bank::account_updater(double tax) {
     }
  
     //multithreading
-    list<Account> accounts;
     thread updatedAccountsThreads[accounts.size()];
     int counter = 0;
     
