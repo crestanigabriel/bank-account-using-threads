@@ -5,23 +5,25 @@
 #include <Account.h>
 #include <Semaphore.h>
 
+#define NUMBER_OF_ACCOUNTS 10
+
 using namespace std;
+
+void create_accounts(Bank &bank) {
+    for (int i = 0; i < NUMBER_OF_ACCOUNTS; i++)
+        bank.insert_account(10.0 * i * i, "Client" + to_string(i+1));
+}
 
 int main()
 {
     Bank bank;
-    bank.insert_account(200.0, "Ana");
-    bank.insert_account(43345.34, "B");
-    bank.insert_account(5465.3, "C");
+
+    create_accounts(bank);
     bank.print_accounts();
-    
-    bank.deposit(10, "Ana");
-    bank.drawOut(250, "Ana");
-    bank.drawOut(205, "Ana");
-    
+
     bank.account_updater(0.12);
-    
+
     bank.print_accounts();
-    
+
     return 0;
 }
