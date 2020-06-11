@@ -2,6 +2,7 @@
 #define ACCOUNT_H
 
 #include <string>
+#include <mutex>
 
 using namespace std;
 
@@ -22,6 +23,7 @@ protected:
 private:
     double _balance;
     string _owner;
+    mutex *_mutex;
 };
 
 #endif // ACCOUNT_H
