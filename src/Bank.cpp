@@ -35,6 +35,7 @@ void Bank::drawOut(double value, string owner) {
 
 void Bank::account_updater(double tax) {
     list<Account>::iterator it;
+    
     //sequential
     for (it = accounts.begin(); it != accounts.end(); it++) {
         (*it).update(tax);
@@ -43,9 +44,11 @@ void Bank::account_updater(double tax) {
     //multithreading
     list<Account> accounts;
     thread updatedAccountsThreads[accounts.size()];
-    for (int i = 0; i < accounts.size(); i++) {
-        // updatedAccountsThreads[i] = thread(accounts[i].update, tax);
-        updatedAccountsThreads[i].join();
+    int counter = 0;
+    
+    for (it = accounts.begin(); it != accounts.end(); it++) {
+        updatedAccountsThreads[counter] = thread(&Account::update, &(*it), tax);
+        counter++;
     }
 }
 
