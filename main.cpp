@@ -53,7 +53,7 @@ int main()
     bank.print_accounts();
     
 //    cout << "\nDuration: " << duration.count()/1000000 << "s" << endl;
-    cout << "\nDuration: " << duration.count() << "microseconds" << endl;
+    cout << "\nDuration: " << duration.count() << " microseconds" << endl;
     
     return 0;
 }
