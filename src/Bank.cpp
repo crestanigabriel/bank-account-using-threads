@@ -1,4 +1,4 @@
-#include <thread>
+// #include <thread>
 
 #include "Bank.h"
 
@@ -42,14 +42,14 @@ void Bank::account_updater(double tax) {
     }
  
     //multithreading
-    thread updatedAccountsThreads[accounts.size()];
-    int counter = 0;
+    // thread updatedAccountsThreads[accounts.size()];
+    // int counter = 0;
     
-    for (it = accounts.begin(); it != accounts.end(); it++) {
-        updatedAccountsThreads[counter] = thread(&Account::update, &(*it), tax);
-        updatedAccountsThreads[counter].join();
-        counter++;
-    }
+    // for (it = accounts.begin(); it != accounts.end(); it++) {
+    //     updatedAccountsThreads[counter] = thread(&Account::update, &(*it), tax);
+    //     updatedAccountsThreads[counter].join();
+    //     counter++;
+    // }
 }
 
 void Bank::print_accounts() {
