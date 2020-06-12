@@ -13,9 +13,6 @@ using namespace std;
 class Bank
 {
 public:
-    Bank();
-    virtual ~Bank();
-
     void insert_account(double balance, string owner);
     void deposit(double value, string owner);
     void drawOut(double value, string owner);

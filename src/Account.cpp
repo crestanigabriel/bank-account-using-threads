@@ -10,11 +10,6 @@ Account::Account(double balance, std::string owner)
     _owner = owner;
 }
 
-Account::~Account()
-{
-    //dtor
-}
-
 void Account::update(double tax) {
     double new_balance = _balance * (1 + tax);
     cout << "--- ["<< _owner << "|" << _balance << "] Updating account with " << tax << "% rate." << endl;

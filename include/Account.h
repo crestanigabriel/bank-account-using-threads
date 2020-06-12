@@ -9,7 +9,6 @@ class Account
 {
 public:
     Account(double balance, string owner);
-    virtual ~Account();
 
     void update(double tax);
     void deposit(double value);
