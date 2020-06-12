@@ -6,7 +6,7 @@
 #include <Bank.h>
 #include <Account.h>
 
-#define NUMBER_OF_ACCOUNTS 10000
+#define NUMBER_OF_ACCOUNTS 1000
 #define NUMBER_OF_OPERATIONS 10000
 
 using namespace std;
@@ -53,8 +53,8 @@ int main()
 
     cout << "\nDuration: " << duration.count() << " microseconds";
     cout << "\nDuration: " << duration.count() / 1000 << " miliseconds" << endl;
-    cout << "\nUpdater duration: " << durationUpdt << " microseconds";
-    cout << "\nUpdater duration: " << durationUpdt / duration.count() << " %" << endl;
+    cout << "\nUpdater duration: " << durationUpdt / 1000 << " miliseconds";
+    cout << "\nUpdater duration: " << (durationUpdt / duration.count()) * 100 << " %" << endl;
 
     return 0;
 }
