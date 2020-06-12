@@ -1,16 +1,4 @@
-// #include <thread>
-
 #include "Bank.h"
-
-Bank::Bank()
-{
-    //ctor
-}
-
-Bank::~Bank()
-{
-    //dtor
-}
 
 void Bank::insert_account(double balance, string owner) {
     Account temp_account(balance, owner);

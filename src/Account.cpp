@@ -11,11 +11,6 @@ Account::Account(double balance, std::string owner)
     _mutex = new mutex();
 }
 
-Account::~Account()
-{
-    //dtor
-}
-
 void Account::update(double tax) {
     (*_mutex).lock();
     double new_balance = _balance * (1 + tax);
