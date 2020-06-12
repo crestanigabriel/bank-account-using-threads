@@ -1,5 +1,3 @@
-// #include <thread>
-
 #include "Bank.h"
 
 Bank::Bank()
@@ -20,16 +18,20 @@ void Bank::insert_account(double balance, string owner) {
 void Bank::deposit(double value, string owner) {
     list<Account>::iterator it;
     for (it = accounts.begin(); it != accounts.end(); it++) {
-        if (((*it).get_owner()).compare(owner) == 0)
+        if (((*it).get_owner()).compare(owner) == 0) {
             (*it).deposit(value);
+            usleep(1 * 1000);
+        }
     }
 }
 
 void Bank::drawOut(double value, string owner) {
     list<Account>::iterator it;
     for (it = accounts.begin(); it != accounts.end(); it++) {
-        if (((*it).get_owner()).compare(owner) == 0)
+        if (((*it).get_owner()).compare(owner) == 0) {
             (*it).drawOut(value);
+            usleep(1 * 1000);
+        }
     }
 }
 
@@ -37,6 +39,7 @@ void Bank::account_updater(double tax) {
     list<Account>::iterator it;
     for (it = accounts.begin(); it != accounts.end(); it++) {
         (*it).update(tax);
+        usleep(1 * 1000);
     }
 }
 

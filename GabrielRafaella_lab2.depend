@@ -1,33 +1,33 @@
 # depslib dependency file v1.0
-1591919530 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/main.cpp
+1591920863 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/main.cpp
 	<iostream>
 	<cstdlib>
 	<list>
-	<thread>
+	<chrono>
 	<Bank.h>
 	<Account.h>
 
-1591919236 /media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/include/Account.h
+1591919800 /media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/include/Account.h
 	<string>
-	<mutex>
 
 1591663336 /media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/include/Semaphore.h
 	<mutex>
 	<condition_variable>
 
-1591919236 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/src/Account.cpp
+1591919793 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/src/Account.cpp
 	<iostream>
 	"Account.h"
 
 1591661585 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/src/Semaphore.cpp
 	"Semaphore.h"
 
-1591889420 /media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/include/Bank.h
+1591920751 /media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/include/Bank.h
 	<Account.h>
 	<iostream>
 	<list>
 	<string>
+	<unistd.h>
 
-1591919353 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/src/Bank.cpp
+1591921149 source:/media/polaku/Docdoc/ITA/2COMP/1sem/ces33/lab2/bank-account-using-threads/src/Bank.cpp
 	"Bank.h"
 
